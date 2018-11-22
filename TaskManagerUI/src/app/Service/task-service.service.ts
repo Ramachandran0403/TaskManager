@@ -9,11 +9,11 @@ export class TaskServiceService {
   constructor(private _http: Http) {
 
   }
-  addUrl: string = "http://localhost:50070/api/Task/AddTask";
-  updateUrl: string = "http://localhost:50070/api/Task/UpdateTask";
-  getUrl: string = "http://localhost:50070/api/Task/GetTasks";
-  getParentTaskUrl: string = "http://localhost:50070/api/Task/GetParentTasks";
-  endTaskUrl: string = "http://localhost:50070/api/Task/EndTask";
+  addUrl: string = "http://localhost/TaskManagerService/api/Task/AddTask";
+  updateUrl: string = "http://localhost/TaskManagerService/api/Task/UpdateTask";
+  getUrl: string = "http://localhost/TaskManagerService/api/Task/GetTasks";
+  getParentTaskUrl: string = "http://localhost/TaskManagerService/api/Task/GetParentTasks";
+  endTaskUrl: string = "http://localhost/TaskManagerService/api/Task/EndTask";
   sharedTaskID: number;
 
   changesharedTaskID(newTaskId: number) {
